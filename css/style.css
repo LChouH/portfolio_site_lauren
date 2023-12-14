@@ -4,6 +4,7 @@ background color (white) : #ffffff
 text color (navy) : #090446
 accent color (green)  : #709A47
 accent color (brown) : #524632
+accent color (off-white) : #F2F4F3
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -14,6 +15,13 @@ accent color (brown) : #524632
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html {
     line-height: 1.15; /* 1 */
@@ -26,7 +34,26 @@ html {
 /**
    * Remove the margin in all browsers.
    */
-
+header {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: #F2F4F3;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    box-shadow: 0px 2px 2px grey;
+}
+selector {
+    margin: 0 auto; /* no spacing to top and bottom and auto spacing to left and right */
+}
+selector {
+    position: relative;
+}
 body {
     margin: 0;
     background-color: #ffffff;
@@ -36,19 +63,67 @@ body {
     line-height: 1.6; /* sets the line height to 1.6 * the font size */
     color: #090446;
     }
-    img {
+img {
         width: 100%;
     }
-
-
+/* layout styling */
+.container {
+    max-width: 1200px;
+}
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#hero h1 {
+    text-align: center; /* centers text */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+.center {
+    text-align: center;
+}
+.logo {
+    max-width: 250px;
+}
+#hero {
+    background-color:#F2F4F3;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
 /**
    * Render the `main` element consistently in IE.
    */
 
 main {
     display: block;
+    padding-top: 133px;
 }
-
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#4a4a4a
+}
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F2F4F3; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
 /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
@@ -390,7 +465,6 @@ textarea {
 /*
    * Add the correct display in Edge, IE 10+, and Firefox.
    */
-
 details {
     display: block;
 }

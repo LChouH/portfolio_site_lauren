@@ -45,17 +45,21 @@ header {
 /* Container Styles */
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Button Styles */
 .button {
+    display:inline-block;
     background-color: #709a47;
     color: #ffffff;
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid transparent;
+    transition-duration: 0.2s;
     transition: 0.2s opacity;
 }
 
@@ -105,6 +109,30 @@ img {
     display: block;
     width: 100%;
 }
+/* Animation */
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+        animation: 30s cloud-move infinite alternate linear;
+    }
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+}
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform:translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px,48px);}
+}
+
+
 
 /* styling for col- */
 [class*="col-"] {

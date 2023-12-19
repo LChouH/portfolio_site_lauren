@@ -12,9 +12,51 @@ accent color (off-white) : #F2F4F3
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    align-content: center;
+}
+/* header */
+.header {
+    display: inline-block;
+    background-color: #F2F4F3;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 2px 2px grey;
+    padding: 50px;
+
+}
+.logo { grid-area: logo; }
+.navigation { grid-area: navigation; }
+
+/* Navigation Bar Styling */
+.navbar {
+    display:grid;
+    grid-template-areas: 'logo logo logo logo logo navigation';
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px;
 }
 
+/* Navigation Bar Link Styling */
+.navbar a{
+    color:#ffffff;
+    padding:14px 20px;
+    text-decoration: none;
+    text-align: center;
+
+/* Project column */
+.project {
+    width:auto;
+    padding: 10px;
+}
+
+}
 body {
     background-color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -30,16 +72,6 @@ body {
     display: inline-block;
     position: relative;
     width: 100%;
-}
-
-/* Header Styles */
-header {
-    display: inline-block;
-    background-color: #F2F4F3;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 2px 2px grey;
 }
 
 /* Container Styles */
@@ -270,4 +302,10 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+}
+/* footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
 }

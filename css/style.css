@@ -11,8 +11,6 @@ accent color (off-white) : #F2F4F3
 /* Global Styles */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0 20px;
 }
 .grid-container {
     display: grid;
@@ -29,10 +27,13 @@ accent color (off-white) : #F2F4F3
     margin: 10px;
     box-shadow: 0 2px 2px grey;
     padding: 50px;
-
 }
-.logo { grid-area: logo; }
-.navigation { grid-area: navigation; }
+.logo { 
+    grid-area: logo;
+}
+.navigation { 
+    grid-area: navigation;
+}
 
 /* Navigation Bar Styling */
 .navbar {
@@ -49,14 +50,14 @@ accent color (off-white) : #F2F4F3
     padding:14px 20px;
     text-decoration: none;
     text-align: center;
+}
 
 /* Project column */
-.project {
-    width:auto;
-    padding: 10px;
+.project-description {
+    padding: 0 50px;
 }
 
-}
+
 body {
     background-color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -65,14 +66,12 @@ body {
     line-height: 1.6;
     color:#090446;
 }
-#about-page h3 { margin-top: 0;}
+
+#about-page h3 { 
+    margin-top: 0;
+}
 
 /* Other Styles... */
-* {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-}
 
 /* Container Styles */
 .container {
@@ -108,12 +107,6 @@ body {
     background-color: #709A47;
     color: #ffffff;
 }
-selector {
-    margin: 0 auto; /* no spacing to top and bottom and auto spacing to left and right */
-}
-selector {
-    position: relative;
-}
 
 img {
         width: 100%;
@@ -127,7 +120,9 @@ img {
     text-align: center; /* centers text */
     margin: 0;
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+#work .row { 
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a
 }
 .center {
     text-align: center;
@@ -141,6 +136,7 @@ img {
     display: block;
     width: 100%;
 }
+
 /* Animation */
 .sun {
     animation: 4s color-change infinite alternate linear;
@@ -163,8 +159,6 @@ img {
     from {transform: translate(446px,48px);}
     to {transform: translate(100px,48px);}
 }
-
-
 
 /* styling for col- */
 [class*="col-"] {
@@ -207,7 +201,10 @@ nav > ul > li > a {
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 }
 
-h1, h2, h3, h4 {
+h1, 
+h2, 
+h3, 
+h4 {
     line-height: 1.4;
 }
 
@@ -249,7 +246,6 @@ a:active {
     /* selected link */
     color: #524632
 }
-
 
 small {
     font-size: 80%;
@@ -308,4 +304,7 @@ Extra-large devices (1920px or larger)
     padding: 5px;
     text-align: center;
     margin-top: 10px;
+}
+footer-img {
+    width: 50px;
 }

@@ -30,6 +30,8 @@ accent color (off-white) : #F2F4F3
 }
 .logo { 
     grid-area: logo;
+    max-width: 150px;
+    min-width: 641px;
 }
 .navigation { 
     grid-area: navigation;

@@ -23,7 +23,6 @@ accent color (off-white) : #F2F4F3
 .header {
     display: inline-block;
     background-color: #F2F4F3;
-    text-align: center;
     margin: 10px;
     box-shadow: 0 2px 2px grey;
     padding: 50px;
@@ -31,12 +30,22 @@ accent color (off-white) : #F2F4F3
 .logo { 
     grid-area: logo;
     max-width: 150px;
-    min-width: 641px;
 }
 .navigation { 
     grid-area: navigation;
 }
-
+.navtoggle li:not(:last-child) {
+    display:none;
+}
+.navtoggle, .navtoggle.responsive {
+    position:relative;
+}
+.navtoggle li .icon {
+    position:absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+}
 /* Navigation Bar Styling */
 .navbar {
     display:grid;
@@ -177,15 +186,14 @@ img {
 
 main {
     display: block;
-    padding-top: 133px;
+    padding-top: 56px;
 }
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
-nav > ul > li {
-    display: inline-block;
-}
+
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
@@ -261,10 +269,10 @@ img {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 10px 0 4px;
     }
 
     nav {
@@ -276,8 +284,19 @@ Medium devices (640px and larger)
     .col-md-6 {
         width: 50%;
     }
+    nav > ul {
+        margin: 1em 0;
+    }
 
-}
+    nav > ul > li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display:inline-block;
+    }
+    .navtoggle li:last-child {
+        display:none;
+    }
 
 /* ==============================
 Large devices (1024px or larger)
@@ -309,4 +328,5 @@ footer {
 }
 footer-img {
     width: 50px;
+}
 }

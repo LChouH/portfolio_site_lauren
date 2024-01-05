@@ -253,6 +253,9 @@ small {
 img {
     border-style: none;
 }
+.icon-container {
+    display:none;
+}
 
 
 /* ==============================
@@ -285,6 +288,9 @@ Medium devices (640px and larger)
     }
     .navtoggle li:last-child {
         display:none;
+    }
+    .icon-container {
+        display:block;
     }
 
 /* ==============================

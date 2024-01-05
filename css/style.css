@@ -87,6 +87,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
     color:#090446;
+    padding: 25px;
 }
 
 #about-page h3 { 
@@ -157,29 +158,6 @@ img {
     padding: 20px 0;
     display: block;
     width: 100%;
-}
-
-/* Animation */
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-.cloud-front {
-        animation: 30s cloud-move infinite alternate linear;
-    }
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
-@keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-}
-@keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform:translate(200px,50px);}
-}
-@keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px,48px);}
 }
 
 /* styling for col- */

@@ -107,7 +107,7 @@ body {
 .button {
     display:inline-block;
     background-color: #709a47;
-    color: #ffffff;
+    -webkit-text-fill-color: #090446;
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
@@ -128,7 +128,7 @@ body {
 }
 .button.contact:hover {
     background-color: #709A47;
-    color: #ffffff;
+    color: #090446;
 }
 
 img {

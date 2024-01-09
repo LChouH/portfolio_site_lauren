@@ -107,7 +107,7 @@ body {
 .button {
     display:inline-block;
     background-color: #709a47;
-    -webkit-text-fill-color: #090446;
+    color: #090446; /* Set text color */
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
